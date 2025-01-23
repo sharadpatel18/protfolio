@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Projects() {
     const handleBlog = () => {
-      window.open('https://github.com/sharadpatel1807/blog-app', '_blank');
+      window.open('https://github.com/sharadpatel18/blog-app', '_blank');
     }
 
     const handleRecipeApp = () => {
