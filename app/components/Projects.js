@@ -17,6 +17,9 @@ export default function Projects() {
     const handleEcommerceApp = () => {
       window.open('https://github.com/sharadpatel18/e-commers-site', '_blank');
     }
+    const handleDiesMover = () => {
+      window.open('https://github.com/sharadpatel18/chess', '_blank');
+    }
   return (
     <section id="projects" className="bg-white py-16 px-4">
       <div className="container mx-auto">
@@ -83,6 +86,19 @@ export default function Projects() {
               <li>React.js for front-end</li>
               <li>Node.js for task management API</li>
               <li>Interactive drag-and-drop features</li>
+            </ul>
+          </motion.div>
+          <motion.div 
+            className="bg-gray-100 p-4 rounded shadow"
+            whileHover={{ scale: 1.05 }} 
+            transition={{ type: 'spring', stiffness: 300 }}
+            onClick={handleDiesMover}
+          >
+            <h3 className="text-xl font-bold">Dies-Mover</h3>
+            <p className="text-gray-600 mt-2">Like choose your dies and move in chess board.</p>
+            <ul className="mt-2">
+              <li>React.js for front-end</li>
+              <li>Responsive design with Tailwind CSS</li>
             </ul>
           </motion.div>
         </div>
