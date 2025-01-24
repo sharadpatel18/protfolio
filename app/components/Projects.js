@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 export default function Projects() {
   const handleBlog = () => {
@@ -24,91 +24,112 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="bg-gray-900 py-16 px-6 md:px-12">
-      <div className="container mx-auto">
-        <motion.h2 
-          className="text-5xl font-light mb-12 text-white" 
-          initial={{ scale: 0.5 }} 
-          animate={{ scale: 1 }} 
-          transition={{ duration: 0.5 }}
+    <section id="projects" className="bg-gradient-to-b from-black to-gray-800 text-gray-100 py-20 px-8">
+      {/* Section Header */}
+      <motion.h2
+        className="text-6xl font-bold text-center mb-16 text-white"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        Projects
+      </motion.h2>
+
+      {/* Content Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
+        {/* Blog App */}
+        <motion.div
+          className="bg-gray-900 p-8 rounded-lg shadow-lg hover:shadow-2xl transform transition-transform duration-300 hover:scale-105 cursor-pointer"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          onClick={handleBlog}
         >
-          Projects
-        </motion.h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <motion.div 
-            className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-all cursor-pointer"
-            whileHover={{ scale: 1.05 }} 
-            transition={{ type: 'spring', stiffness: 300 }}
-            onClick={handleBlog}
-          >
-            <h3 className="text-2xl font-semibold text-white">Blog App</h3>
-            <p className="text-gray-400 mt-2">A platform for sharing and discovering insightful blogs.</p>
-            <ul className="mt-4 text-gray-300">
-              <li>React.js & Node.js</li>
-              <li>MongoDB for storing blog data</li>
-              <li>User authentication using JWT</li>
-            </ul>
-          </motion.div>
+          <h3 className="text-2xl font-semibold mb-4 text-blue-400">Blog App</h3>
+          <p className="text-lg leading-relaxed text-gray-300">
+            A platform for sharing and discovering insightful blogs.
+          </p>
+          <ul className="mt-4 text-gray-400">
+            <li>React.js & Node.js</li>
+            <li>MongoDB for storing blog data</li>
+            <li>User authentication using JWT</li>
+          </ul>
+        </motion.div>
 
-          <motion.div 
-            className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-all cursor-pointer"
-            whileHover={{ scale: 1.05 }} 
-            transition={{ type: 'spring', stiffness: 300 }}
-            onClick={handleRecipeApp}
-          >
-            <h3 className="text-2xl font-semibold text-white">Recipe App</h3>
-            <p className="text-gray-400 mt-2">Discover and save your favorite recipes in one place.</p>
-            <ul className="mt-4 text-gray-300">
-              <li>React.js & Express.js</li>
-              <li>Recipe API integration</li>
-              <li>Responsive design with Tailwind CSS</li>
-            </ul>
-          </motion.div>
+        {/* Recipe App */}
+        <motion.div
+          className="bg-gray-900 p-8 rounded-lg shadow-lg hover:shadow-2xl transform transition-transform duration-300 hover:scale-105 cursor-pointer"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9 }}
+          onClick={handleRecipeApp}
+        >
+          <h3 className="text-2xl font-semibold mb-4 text-green-400">Recipe App</h3>
+          <p className="text-lg leading-relaxed text-gray-300">
+            Discover and save your favorite recipes in one place.
+          </p>
+          <ul className="mt-4 text-gray-400">
+            <li>React.js & Express.js</li>
+            <li>Recipe API integration</li>
+            <li>Responsive design with Tailwind CSS</li>
+          </ul>
+        </motion.div>
 
-          <motion.div 
-            className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-all cursor-pointer"
-            whileHover={{ scale: 1.05 }} 
-            transition={{ type: 'spring', stiffness: 300 }}
-            onClick={handleEcommerceApp}
-          >
-            <h3 className="text-2xl font-semibold text-white">E-Commerce Site</h3>
-            <p className="text-gray-400 mt-2">An intuitive online shopping platform.</p>
-            <ul className="mt-4 text-gray-300">
-              <li>Full-stack application with MERN</li>
-              <li>Payment integration with Stripe</li>
-              <li>Product search and filtering</li>
-            </ul>
-          </motion.div>
+        {/* E-Commerce Site */}
+        <motion.div
+          className="bg-gray-900 p-8 rounded-lg shadow-lg hover:shadow-2xl transform transition-transform duration-300 hover:scale-105 cursor-pointer"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          onClick={handleEcommerceApp}
+        >
+          <h3 className="text-2xl font-semibold mb-4 text-yellow-400">E-Commerce Site</h3>
+          <p className="text-lg leading-relaxed text-gray-300">
+            An intuitive online shopping platform.
+          </p>
+          <ul className="mt-4 text-gray-400">
+            <li>Full-stack application with MERN</li>
+            <li>Payment integration with Stripe</li>
+            <li>Product search and filtering</li>
+          </ul>
+        </motion.div>
 
-          <motion.div 
-            className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-all cursor-pointer"
-            whileHover={{ scale: 1.05 }} 
-            transition={{ type: 'spring', stiffness: 300 }}
-            onClick={handleTaskApp}
-          >
-            <h3 className="text-2xl font-semibold text-white">Task Management Site</h3>
-            <p className="text-gray-400 mt-2">Stay productive and organized with task tracking.</p>
-            <ul className="mt-4 text-gray-300">
-              <li>React.js for front-end</li>
-              <li>Node.js for task management API</li>
-              <li>Interactive drag-and-drop features</li>
-            </ul>
-          </motion.div>
+        {/* Task Management Site */}
+        <motion.div
+          className="bg-gray-900 p-8 rounded-lg shadow-lg hover:shadow-2xl transform transition-transform duration-300 hover:scale-105 cursor-pointer"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.1 }}
+          onClick={handleTaskApp}
+        >
+          <h3 className="text-2xl font-semibold mb-4 text-red-400">Task Management Site</h3>
+          <p className="text-lg leading-relaxed text-gray-300">
+            Stay productive and organized with task tracking.
+          </p>
+          <ul className="mt-4 text-gray-400">
+            <li>React.js for front-end</li>
+            <li>Node.js for task management API</li>
+            <li>Interactive drag-and-drop features</li>
+          </ul>
+        </motion.div>
 
-          <motion.div 
-            className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-all cursor-pointer"
-            whileHover={{ scale: 1.05 }} 
-            transition={{ type: 'spring', stiffness: 300 }}
-            onClick={handleDiesMover}
-          >
-            <h3 className="text-2xl font-semibold text-white">Dies-Mover</h3>
-            <p className="text-gray-400 mt-2">Like choose your dies and move in chess board.</p>
-            <ul className="mt-4 text-gray-300">
-              <li>React.js for front-end</li>
-              <li>Responsive design with Tailwind CSS</li>
-            </ul>
-          </motion.div>
-        </div>
+        {/* Dies-Mover */}
+        <motion.div
+          className="bg-gray-900 p-8 rounded-lg shadow-lg hover:shadow-2xl transform transition-transform duration-300 hover:scale-105 cursor-pointer"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2 }}
+          onClick={handleDiesMover}
+        >
+          <h3 className="text-2xl font-semibold mb-4 text-purple-400">Dies-Mover</h3>
+          <p className="text-lg leading-relaxed text-gray-300">
+            Like choose your dice and move in chess board.
+          </p>
+          <ul className="mt-4 text-gray-400">
+            <li>React.js for front-end</li>
+            <li>Responsive design with Tailwind CSS</li>
+          </ul>
+        </motion.div>
       </div>
     </section>
   );
