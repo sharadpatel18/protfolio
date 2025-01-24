@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Header() {
   return (
     <motion.header
-      className="bg-gradient-to-b from-black to-gray-900 text-white p-4 sticky top-0 z-50 shadow-lg"
+      className="bg-gradient-to-b from-gray-800 to-black text-gray-200 p-4 sticky top-0 z-50 shadow-lg"
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
