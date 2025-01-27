@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Sharad Patel's Portfolio
 
-## Getting Started
+Welcome to my portfolio! I'm **Sharad Patel**, a 19-year-old **MERN stack developer** based in Gandhinagar. This space showcases my projects, skills, and experiences as I embark on my journey into the tech industry.
 
-First, run the development server:
+## Table of Contents
+- [About Me](#about-me)
+- [Projects](#projects)
+- [Skills](#skills)
+- [Experience](#experience)
+- [Contact](#contact)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## About Me
+Hi! I'm Sharad Patel, a passionate MERN stack developer eager to dive into the professional world. At 19, I'm actively seeking internship opportunities to apply my skills and contribute to meaningful projects. I believe in continuous learning and staying updated with the latest trends in technology.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Projects
+Here are some of the projects I've worked on:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Project 1: **Blog App**
+- **Description:** A full-featured blogging platform where users can create, read, update, and delete blog posts. It includes user authentication, comment sections, and rich text editing capabilities.
+- **Technologies Used:** MongoDB, Express.js, React.js, Node.js (MERN Stack)
+- **Link:** [Link to the Blog App](#) *(Replace with actual link)*
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Project 2: **Recipe Creator**
+- **Description:** An interactive application where users can create recipes and place orders for ingredients. It allows users to submit their own recipes, browse others, and manage orders seamlessly.
+- **Technologies Used:** MongoDB, Express.js, React.js, Node.js (MERN Stack)
+- **Link:** [Link to the Recipe Creator](#) *(Replace with actual link)*
 
-## Learn More
+*(Make sure to replace the placeholders with your actual project links.)*
 
-To learn more about Next.js, take a look at the following resources:
+## Skills
+- **Programming Languages:** JavaScript
+- **Frontend:** Next.js,React.js, HTML5, CSS3
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Tools & Platforms:** Git, GitHub, Visual Studio Code, Vercel
+- **Other Skills:** Problem-solving, teamwork, adaptability, quick learner
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Experience
+As a **fresher**, I'm enthusiastic about gaining hands-on experience through internships. I'm eager to collaborate with professionals, contribute to projects, and further develop my skill set.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contact
+Feel free to reach out to me:
+- **Email:** [sharadpatel1807@gmail.com](mailto:sharadpatel1807@gmail.com)
+- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/feed/?trk=onboarding-landing) *(Replace with your actual LinkedIn URL)*
+- **GitHub:** [GitHub Profile](https://github.com/sharadpatel18) *(Replace with your actual GitHub URL)*
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Thank you for visiting my portfolio!
